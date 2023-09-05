@@ -3,7 +3,8 @@ set -o errexit
 case "$1" in
   "")
     cd "${HOME}/NEMD_workshop_2023"
-    git pull
+    git fetch origin
+    git reset --hard origin/main
     ./start_workshop.sh setup
     ;;
   "setup")
