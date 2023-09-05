@@ -13,6 +13,6 @@ case "$1" in
     ;;
   "run")
     cd "${HOME}/NEMD_workshop_2023"
-    jupyter-lab NEMD-workshop-2023.ipynb --no-browser --port 8088
+    jupyter-lab NEMD-workshop-2023.ipynb --no-browser --port 8889
     ;;
 esac
