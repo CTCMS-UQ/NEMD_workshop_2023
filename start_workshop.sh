@@ -1,5 +1,15 @@
 #!/bin/bash
 set -o errexit
+if [ "$USER" != nemd ]; then
+  echo This script is designed to be run in a specific environment!
+  echo ""
+  echo If you\'re on a local machine, you can open the notebook
+  echo manually by running:
+  echo ""
+  echo jupyter-lab NEMD-workshop-2023.ipynb
+  echo ""
+  exit
+fi
 case "$1" in
   "")
     cd "${HOME}/NEMD_workshop_2023"
