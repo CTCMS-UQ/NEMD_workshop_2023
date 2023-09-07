@@ -20,7 +20,6 @@ case "$1" in
   "setup")
     # Add steps here to fetch any additional material
     cd "${HOME}/NEMD_workshop_2023"
-    touch test
     ./start_workshop.sh run
     ;;
   "run")
