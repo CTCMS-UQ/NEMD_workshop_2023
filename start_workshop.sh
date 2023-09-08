@@ -20,6 +20,9 @@ case "$1" in
   "setup")
     # Add steps here to fetch any additional material
     cd "${HOME}/NEMD_workshop_2023"
+    if [ ! -f fluctuation_theorems/slides.pdf ]; then
+      wget 'https://drive.google.com/uc?export=download&id=1U6D6vEcvqLgoPmZR_bAhm7VUmAv-xF-X' -O fluctuation_theorems/slides.pdf
+    fi
     ./start_workshop.sh run
     ;;
   "run")
