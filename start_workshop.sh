@@ -23,6 +23,9 @@ case "$1" in
     if [ ! -f fluctuation_theorems/slides.pdf ]; then
       wget 'https://drive.google.com/uc?export=download&id=1U6D6vEcvqLgoPmZR_bAhm7VUmAv-xF-X' -O fluctuation_theorems/slides.pdf
     fi
+    if [ ! -f machine_learning/ML_MPPs_exercises.ipynb ]; then
+      wget 'https://drive.google.com/uc?export=download&id=11bbJ1x2UnDjDbpcuyy9issAgEiCiv9-x' -O machine_learning/ML_MPPs_exercises.ipynb
+    fi
     ./start_workshop.sh run
     ;;
   "run")
